@@ -13,6 +13,12 @@
     
 
     
+        <meta name="description" content="Node2veccode a new life
+random walk
+从任意一点开始，采集节点序列。当前节点从它的邻接点等概率选择一个点作为后继节点，以此类推，在采集到足够多的节点之后 使用skip gram模型像处理文本一样处理这些序列
+skip gram
+滑窗中心词和滑窗外的词共同出现的概率越"/>
+    
 
     <!--Author-->
     
@@ -25,6 +31,12 @@
     
 
     <!--Open Graph Description-->
+    
+        <meta property="og:description" content="Node2veccode a new life
+random walk
+从任意一点开始，采集节点序列。当前节点从它的邻接点等概率选择一个点作为后继节点，以此类推，在采集到足够多的节点之后 使用skip gram模型像处理文本一样处理这些序列
+skip gram
+滑窗中心词和滑窗外的词共同出现的概率越"/>
     
 
     <!--Open Graph Site Name-->
@@ -51,7 +63,7 @@
 
     <!-- Title -->
     
-    <title>Archives: 2021 - Hexo</title>
+    <title>Hexo</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -155,75 +167,84 @@
 </nav>
 
     <!-- Main Content -->
-    
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
 
-<!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
 <header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>2021</h1>
+                <div class="post-heading">
+                    <h1>Untitled</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2021-02-12
+                        
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
             
-                <div class="post-preview">
-    <a href="/2021/02/12/node2vec/">
-        <h1 class="post-title archive">
-            Untitled
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2021-02-12
-    </p>
-</div>
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="Node2vec"><a href="#Node2vec" class="headerlink" title="Node2vec"></a>Node2vec</h1><p><strong><em>code a new life</em></strong></p>
+<p>random walk</p>
+<p>从任意一点开始，采集节点序列。当前节点从它的邻接点等概率选择一个点作为后继节点，以此类推，在采集到足够多的节点之后 使用skip gram模型像处理文本一样处理这些序列</p>
+<p>skip gram</p>
+<p>滑窗中心词和滑窗外的词共同出现的概率越小越好</p>
+<p>滑窗中心词和滑窗里的词共同出现的概率越大越好</p>
+<p>使得更多的保留语境信息</p>
+<p>如果在图里，保留中心词周围的结构信息</p>
+<p>dfs:尽可能采集一个长的序列</p>
+<p>bfs:尽可能将一个点周围的邻接点先采集一遍</p>
+<p>嵌入：将实体嵌入向量空间 使每个实体都具有独一无二的向量表示</p>
+<p>分类：点嵌入 边嵌入 子图嵌入</p>
+<p>将图的结构信息编码其中</p>
+<p>可以被用作下游神经网络的输入</p>
+<p>Node2vec</p>
+<p>继承自deep walk</p>
+<p>使用参数来控制随机游走的倾向</p>
+<p>缺点：</p>
+<ol>
+<li><p>p q 的调参方向不明确</p>
+</li>
+<li><p>节点的名称&amp;属性等信息未考虑</p>
+</li>
+</ol>
+<p>![image-20210212210217665](/Users/xuhan/Library/Application Support/typora-user-images/image-20210212210217665.png)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line">pd.read_csv()</span><br></pre></td></tr></table></figure>
+
+
+                
+            </div>
+
+            <!-- Comments -->
             
-                <div class="post-preview">
-    <a href="/2021/02/12/test/">
-        <h1 class="post-title archive">
-            test
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2021-02-12
-    </p>
-</div>
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
             
-                <div class="post-preview">
-    <a href="/2021/02/12/hello-world/">
-        <h1 class="post-title archive">
-            Hello World
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2021-02-12
-    </p>
-</div>
-            
-            <div class="archive-before-pagination"></div>
-            <ul class="pager">
-    
-    
-</ul>
         </div>
     </div>
-</div>
-
+</article>
 
     <!-- Footer -->
     <hr />
