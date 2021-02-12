@@ -207,23 +207,25 @@ skip gram
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <h1 id="Node2vec"><a href="#Node2vec" class="headerlink" title="Node2vec"></a>Node2vec</h1><p><strong><em>code a new life</em></strong></p>
 <p>random walk</p>
-<p><em>从任意一点开始，采集节点序列。当前节点从它的邻接点等概率选择一个点作为后继节点，以此类推，在采集到足够多的节点之后 使用skip gram模型像处理文本一样处理这些序列</em></p>
+<p>从任意一点开始，采集节点序列。当前节点从它的邻接点等概率选择一个点作为后继节点，以此类推，在采集到足够多的节点之后 使用skip gram模型像处理文本一样处理这些序列</p>
 <p>skip gram</p>
 <ol>
 <li>滑窗中心词和滑窗外的词共同出现的概率越小越好</li>
 <li>滑窗中心词和滑窗里的词共同出现的概率越大越好</li>
 <li>使得更多的保留语境信息</li>
+<li>如果在图里，保留中心词周围的结构信息</li>
 </ol>
-<p>如果在图里，保留中心词周围的结构信息</p>
-<p>dfs:尽可能采集一个长的序列</p>
-<p>bfs:尽可能将一个点周围的邻接点先采集一遍</p>
+<p>dfs: 尽可能采集一个长的序列</p>
+<p>bfs: 尽可能将一个点周围的邻接点先采集一遍</p>
 <p>嵌入：将实体嵌入向量空间 使每个实体都具有独一无二的向量表示</p>
 <p>分类：点嵌入 边嵌入 子图嵌入</p>
 <p>将图的结构信息编码其中</p>
 <p>可以被用作下游神经网络的输入</p>
 <p>Node2vec</p>
-<p>继承自deep walk</p>
-<p>使用参数来控制随机游走的倾向</p>
+<ol>
+<li>继承自deep walk</li>
+<li>使用参数来控制随机游走的倾向</li>
+</ol>
 <p>缺点：</p>
 <ol>
 <li><p>p q 的调参方向不明确</p>
@@ -232,7 +234,6 @@ skip gram
 </li>
 </ol>
 <p>![image-20210212210217665](/Users/xuhan/Library/Application Support/typora-user-images/image-20210212210217665.png)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line">pd.read_csv()</span><br></pre></td></tr></table></figure>
 <p><img src="image-20210212210217665.png"></p>
 
 
