@@ -161,7 +161,7 @@ hr.small {
   background-color: #808080;
   background-position: center center;
   background-attachment: scroll;
-  margin-bottom: 50px;
+  margin-bottom: 16px;
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
@@ -180,7 +180,7 @@ hr.small {
 .intro-header .post-heading.archives,
 .intro-header .page-heading.archives {
   color: #0085a1;
-  margin-top: 60px;
+  margin-top: 16px;
 }
 .intro-header .site-heading,
 .intro-header .page-heading {
@@ -244,7 +244,7 @@ hr.small {
 }
 .post-preview > a > .post-title {
   font-size: 30px;
-  margin-top: 30px;
+  margin-top: 16px;
   margin-bottom: 10px;
 }
 .post-preview > a > .post-title.archive {
@@ -280,7 +280,7 @@ hr.small {
 }
 .section-heading {
   font-size: 36px;
-  margin-top: 60px;
+  margin-top: 16px;
   font-weight: 700;
 }
 .caption {
@@ -296,8 +296,8 @@ hr.small {
 .post-tags,
 .post-categories {
   font-size: 15px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 .post-tags a,
 .post-categories a {
