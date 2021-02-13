@@ -36,7 +36,7 @@ body {
   color: #404040;
 }
 p {
-  line-height: 1.5;
+  line-height: 1.1;
   margin: 16px 0;
 }
 p a,
@@ -356,7 +356,7 @@ footer .copyright {
   top: 2em;
   margin: 0;
   font-size: 0.85em;
-  line-height: 1.764705882em;
+  line-height: 1.164705882em;
   vertical-align: middle;
   vertical-align: baseline;
   opacity: 0;
